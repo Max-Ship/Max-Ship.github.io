@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipilov Maxim</title>
-
-
+    <script>
+        if (window.location.pathname.endsWith('index.html')) {
+            const newPath = window.location.pathname.replace('index.html', '');
+            window.location.replace(newPath + window.location.search + window.location.hash);
+        }
+    </script>
     <script type="module" crossorigin src="/assets/index-BdwINVmr.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/style-BF24-28b.css">
 </head>
